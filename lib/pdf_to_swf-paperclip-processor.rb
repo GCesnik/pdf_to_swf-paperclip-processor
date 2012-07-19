@@ -30,7 +30,7 @@ module Paperclip
 
       Paperclip.run("pdf2swf", parameters, :dest => "#{File.expand_path(dst.path)}", :source => File.expand_path(src.path))
     rescue Cocaine::CommandLineError => e
-      raise PaperclipError, "There was an error converting #{@basename} to swf"
+      raise PaperclipError, "There was an error converting #{@basename} to swf. Error #{e.message}."
     end
     dst
   end
