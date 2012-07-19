@@ -27,9 +27,6 @@ module Paperclip
       parameters << ":source"
 
       parameters = parameters.flatten.compact.join(" ").strip.squeeze(" ")
-      logger.info("File.expand_path(dst.path)")
-      logger.error("File.expand_path(dst.path)")
-      logger.warn("File.expand_path(dst.path)")
 
       Paperclip.run("pdf2swf", parameters, :dest => "#{File.expand_path(dst.path)}", :source => File.expand_path(src.path))
     rescue Cocaine::CommandLineError => e
