@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = "pdf_to_swf-paperclip-processor"
   s.version     = Pdftoswf::Paperclip::Processor::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Armin Pašalić", "Mojmir Novakovic"]
+  s.authors     = ["Greg Cesnik"]
   s.email       = ["armin@pasalic.com.ba","moonflash.as3@gmail.com"]
   s.homepage    = "https://github.com/Krule/pdf_to_swf-paperclip-processor"
   s.summary     = %q{Converts uploaded pdf to swf}
